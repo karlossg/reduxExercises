@@ -5,7 +5,6 @@ import { createStore } from 'redux';
 import App from './components/App';
 import reducer from './reducers/index';
 import registerServiceWorker from './registerServiceWorker';
-// import addComment from './actions/index';
 
 const store = createStore(reducer);
 
@@ -18,6 +17,3 @@ ReactDOM.render(
 
 registerServiceWorker();
 
-
-// store.dispatch(addComment('pierwszy komentarz'));
-// store.dispatch(addComment('drugi komentarz'));

@@ -1,7 +1,4 @@
 import React from 'react';
-// import { connect } from 'react-redux'
-// import { addComment } from '../actions/index'
-// import AddCommentContainer from '../containers/AddCommentContainer';
 
 const AddComment = ({ text, addComment }) => {
   let input
@@ -11,9 +8,9 @@ const AddComment = ({ text, addComment }) => {
       <form
         onSubmit={e => {
           e.preventDefault()
-          // if (!input.value.trim()) {
-          //   return
-          // }
+          if (!input.value.trim()) {
+            return
+          }
           addComment(input.value);
           input.value = ''
         }}
