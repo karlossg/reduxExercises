@@ -8,7 +8,7 @@ export const THUMB_UP_COMMENT = 'THUMB_UP_COMMENT';
 export const THUMB_DOWN_COMMENT = 'THUMB_DOWN_COMMENT';
 
 //action creators
-export default function addComment(text) {
+export const addComment = (text) => {
   return {
     type: ADD_COMMENT,
     text,
@@ -16,7 +16,7 @@ export default function addComment(text) {
   };
 }
 
-export function editComment(id, text) {
+export const editComment = (id, text) => {
   return {
     type: EDIT_COMMENT,
     text,
@@ -24,26 +24,28 @@ export function editComment(id, text) {
   };
 }
 
-export function removeComment(id) {
+export const removeComment = (id) => {
   return {
     type: REMOVE_COMMENT,
     id
   };
 }
 
-export function thumbUpComment(id) {
+export const thumbUpComment = (id) => {
   return {
     type: THUMB_UP_COMMENT,
     id
   };
 }
 
-export function thumbDownComment(id) {
+export const thumbDownComment = (id) => {
   return {
     type: THUMB_DOWN_COMMENT,
     id
   };
 }
+
+export default addComment
 
 //bound action creators
 // const boundAddComment = text => dispatch(addComment(text));
