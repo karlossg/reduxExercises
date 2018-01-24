@@ -1,5 +1,5 @@
 import React from 'react';
-import { connect } from 'react-redux'
+// import { connect } from 'react-redux'
 // import { addComment } from '../actions/index'
 // import AddCommentContainer from '../containers/AddCommentContainer';
 
@@ -14,7 +14,7 @@ const AddComment = ({ text, addComment }) => {
           // if (!input.value.trim()) {
           //   return
           // }
-          store.dispatch(addComment(input.value));
+          addComment(input.value);
           input.value = ''
         }}
       >
