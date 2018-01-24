@@ -2,7 +2,6 @@ import { connect } from 'react-redux';
 import CommentsList from '../components/CommentsList';
 
 const mapStateToProps = state => ({
-  // console.log(state)
   comments: state.comments
 });
 
